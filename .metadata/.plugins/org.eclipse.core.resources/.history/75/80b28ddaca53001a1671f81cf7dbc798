@@ -1,0 +1,6 @@
+mas mag_hw {
+    agent bob { // file bob.asl is used
+      goals: say("How's life treating you Honey")
+    }
+    agent alice: hwa.asl
+}

@@ -1,0 +1,16 @@
+mas mag_hw {
+    agent aninda: hwa.asl {
+      goals: say("what is up in the world?")
+    }
+    agent poulomi: hwa.asl {
+      goals: say("not much")
+    }
+}
+//making use of that one agent file and performing the goal
+
+//In order to create both agents from the same code (as in the previous example, 
+//having only one plan), 
+//we can use this .jcm file:
+
+//Agents run concurrently and asynchronously pursue their goals
+// and thus this initial implementation cannot guarantee the order of the printed messages.

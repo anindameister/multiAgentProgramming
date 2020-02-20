@@ -1,0 +1,7 @@
+// bob.asl
++!say(M) <- .print(M);
+            .send(alice,achieve,say("you tell  me, seems that you're becoming more good-looking'")).
+            
+            //Some coordination is required so that bob prints first and alice later. 
+            //We can solve the problem with bob sending a to alice as soon as its message is printed. 
+            //The new program is as follows (to be included in a file named bob.asl):

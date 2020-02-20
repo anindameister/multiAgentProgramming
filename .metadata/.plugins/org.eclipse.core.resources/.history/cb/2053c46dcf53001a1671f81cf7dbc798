@@ -1,0 +1,6 @@
+mas mag_hw {
+    agent arunava { // file arunava.asl is used
+      goals: say("Hello Beautiful")
+    }
+    agent bela: default_rule_set_for_bela.asl
+}

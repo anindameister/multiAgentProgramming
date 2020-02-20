@@ -1,0 +1,13 @@
+mas mag_hw {
+    agent bob: hwa.asl {
+      goals: say("Hello")
+    }
+    agent alice: hwa.asl {
+      goals: say("World")
+    }
+}
+//making use of that one agent file and performing the goal
+
+//In order to create both agents from the same code (as in the previous example, 
+//having only one plan), 
+//we can use this .jcm file:

@@ -1,0 +1,8 @@
+mas thisDoesntMatter {
+    agent arunava { // file arunava.asl is used
+      goals: say("Hello Beautiful, how are we doing today?")
+    }
+    agent bela { // file bela.asl is used
+      beliefs: say("Yaad nahi kal tujhe jharu se mari thi, abhi kya chahiye?")
+   }
+}

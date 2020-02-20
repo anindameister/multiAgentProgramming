@@ -1,0 +1,6 @@
+mas mag_hw {
+    agent arunava { // file bob.asl is used
+      goals: say("How's life treating you Honey")
+    }
+    agent bela: default_rule_set_for_bela.asl
+}

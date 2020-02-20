@@ -1,0 +1,4 @@
+// hwa.asl
++!say(M) : true <- .print(M).
+//saying something, this something is the variable and it has been named M,
+// note that the variable is always in upper case

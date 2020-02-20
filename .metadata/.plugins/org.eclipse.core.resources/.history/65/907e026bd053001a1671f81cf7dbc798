@@ -1,0 +1,6 @@
+// warning_arunava.asl
++!say(M) <- .print(M);
+            .send(bela,tell,done).
+            
+      //It does so by sending bela the information done using the tell verb in the message 
+//so that bela interprets it as a belief and reacts to this new information.

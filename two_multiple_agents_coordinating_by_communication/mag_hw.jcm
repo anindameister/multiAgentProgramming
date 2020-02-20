@@ -1,0 +1,16 @@
+mas mag_hw {
+    agent aninda: one_goal_two_agents.asl {
+      goals: say("Hello Princess")
+    }
+    agent poulomi: one_goal_two_agents.asl {
+      goals: say("kemon acho?")
+    }
+}
+
+//CArtAgO Http Server running on http://192.168.1.74:3273
+//Jason Http Server running on http://192.168.1.74:3272
+//[poulomi] kemon acho?
+//[aninda] Hello Princess
+
+//the result of the execution is not exactly what we expected. It could be as above:
+//to combat the problem, we go to the next part, where we create a co-ordination between the two agents

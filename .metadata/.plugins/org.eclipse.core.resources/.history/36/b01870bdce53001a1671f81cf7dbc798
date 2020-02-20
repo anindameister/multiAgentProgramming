@@ -1,0 +1,8 @@
+mas mag_hw {
+    agent aninda: one_goal_two_agents.asl {
+      goals: say("Hello Princess")
+    }
+    agent poulomi: one_goal_two_agents.asl {
+      goals: say("kemon acho?")
+    }
+}
