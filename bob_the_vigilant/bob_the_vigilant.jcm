@@ -1,0 +1,4 @@
+mas bdi_hw {
+    agent bob
+    agent alice
+}

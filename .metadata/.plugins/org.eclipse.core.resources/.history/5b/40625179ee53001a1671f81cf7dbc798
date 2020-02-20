@@ -1,0 +1,4 @@
+// asish.asl
+happy(asish).
+!say(cholo_beriye_ashi).
++!say(X) : happy(bob) <- .print(X).

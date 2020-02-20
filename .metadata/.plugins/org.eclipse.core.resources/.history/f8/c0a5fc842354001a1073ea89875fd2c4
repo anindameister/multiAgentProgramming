@@ -1,0 +1,8 @@
+mas bdi_hw {
+   agent arunava
+   workspace world {
+      artifact cal: Calendar {
+         focused-by: bob
+      }
+   }
+}

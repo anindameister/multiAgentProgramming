@@ -1,0 +1,3 @@
+// ashim.asl
++happy(ashim) <- !say(hello).
++!say(X) : not today(monday) <- .print(X); .wait(500); !say(X).
