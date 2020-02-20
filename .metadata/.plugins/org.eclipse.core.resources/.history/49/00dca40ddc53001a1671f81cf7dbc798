@@ -1,0 +1,15 @@
+mas sit_hw {
+  agent aninda {
+    join: workshop      // aninda joins workspace workshop
+    goals: say("Hello")
+  }
+
+  agent poulomi {
+    join:  workshop     // poulomi joins workspace workshop
+    focus: workshop.board   // and focus on artifact board
+  }
+
+  workspace workshop {  // creates the workspace workshop
+    artifact board: tools.Blackboard  // with artifact board from Blackboard artifact class
+  }
+}

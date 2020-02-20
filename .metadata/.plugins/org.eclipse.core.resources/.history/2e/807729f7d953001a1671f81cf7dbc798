@@ -1,0 +1,19 @@
+// CArtAgO artifact code for project multiple_agents_coordinating_via_the_environment
+
+package artifacts;
+
+import cartago.*;
+
+public class Blackboard extends Artifact {
+	void init(int initialValue) {
+		defineObsProperty("count", initialValue);
+	}
+
+	@OPERATION
+	void inc() {
+		ObsProperty prop = getObsProperty("count");
+		prop.updateValue(prop.intValue()+1);
+		signal("tick");
+	}
+}
+

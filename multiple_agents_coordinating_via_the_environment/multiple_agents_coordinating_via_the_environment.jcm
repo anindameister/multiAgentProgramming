@@ -1,22 +1,15 @@
-/*
-    multiple_agents_coordinating_via_the_environment
-    ---------------------------
+mas sit_hw {
+  agent aninda {
+    join: workshop      // aninda joins workspace workshop
+    goals: say("Hello")
+  }
 
-    JaCaMo Application File
+  agent poulomi {
+    join:  workshop     // poulomi joins workspace workshop
+    focus: workshop.board   // and focus on artifact board
+  }
 
-    This file defines the initial state of the MAS (initial agents, environment, organisation, ....)
-
-    (see jacamo/doc/jcm.html for more information about what can be defined in this file)
-
-    JaCaMo <VERSION>
-    <DATE>
-*/
-
-mas multiple_agents_coordinating_via_the_environment {
-
-    agent sample_agent
-
-    
-
+  workspace workshop {  // creates the workspace workshop
+    artifact board: artifacts.Blackboard  // with artifact board from Blackboard artifact class
+  }
 }
-
